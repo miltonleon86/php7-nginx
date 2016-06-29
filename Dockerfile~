@@ -18,10 +18,6 @@ EXPOSE 80 443
 COPY default /etc/nginx/sites-available/
 COPY default /etc/nginx/sites-enabled/
 
-#phpInfo
-RUN touch /var/www/html/info.php
-RUN echo "<?php echo phpInfo(); ?>" > /var/www/html/info.php
-
 #Start sh
 ADD start.sh /start.sh
 RUN chmod +x /start.sh

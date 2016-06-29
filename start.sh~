@@ -3,6 +3,6 @@
 
 # Stay up for container to stay alive
 while [ 1 ] ; do
-   sleep infinity
+   sleep 1d
 done
 
